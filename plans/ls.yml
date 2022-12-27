@@ -1,0 +1,7 @@
+steps:
+  - command: hostname -f
+    targets:
+      - s1
+    description: "Get the webserver hostnames"
+    config:
+        transport: ssh

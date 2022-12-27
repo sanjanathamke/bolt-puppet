@@ -1,0 +1,14 @@
+# This is an example inventory.yaml
+# To read more about inventory files, see https://pup.pt/bolt-inventory
+#
+groups:
+  - name: s1j
+    targets:
+      - s1
+    config:
+      transport: ssh
+      ssh:
+        private-key: ~/.ssh/jiomeet_id_rsa
+config:
+  ssh:
+    host-key-check: false
